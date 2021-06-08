@@ -19,4 +19,15 @@ const String TrainigImage='assets/images/presentation.png';
 const String VolunteerImage='assets/images/solidarity.png';
 const String AboutPageImage= 'assets/images/about.png';
 const String ContactUsImage= 'assets/images/contact.png';
-const String LogoImage='assets/red-cross.png';
+const String LogoImage='assets/images/red-cross.png';
+//
+const String MembershipLabel="Membership";
+const String BloodDonorLabel="Blood Donor";
+const String HomeNursingLabel="Home Nursing";
+const String BloodBankLabel="Blood Bank";
+const String LocateLabel="Locations";
+const String TrainingLabel="Training";
+const String VolunteerLabel="Volunteer";
+const String AboutPageLabel="About";
+const String ContactUsLabel="Contact Us";
+const String LogoLabel="";

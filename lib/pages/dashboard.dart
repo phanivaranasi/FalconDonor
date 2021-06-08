@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:red_cross_hyd/components/header.dart';
+import 'package:red_cross_hyd/components/navigation.dart';
 import 'package:red_cross_hyd/pages/about.dart';
 import 'package:red_cross_hyd/pages/bloodbank.dart';
 import 'package:red_cross_hyd/pages/blooddonor.dart';
@@ -23,17 +24,18 @@ class DashboardPageState extends State<DashboardPage> {
   Widget build(BuildContext context) {
     final content = Scaffold(
         appBar: header('Blood Bank', LogoImage),
+        drawer: drawer(context),
         body: Center(
             child: Container(
           child: GridView.count(
             crossAxisCount: 3,
             children: <Widget>[
               dashboardIcon(
-                  MembershipImage, 'Membership', AppRoutes.Membership),
+                  MembershipImage, MembershipLabel, AppRoutes.Membership),
               dashboardIcon(
-                  BloodDonorImage, 'Blood Donors', AppRoutes.BloodDonor),
+                  BloodDonorImage,BloodDonorLabel, AppRoutes.BloodDonor),
               dashboardIcon(
-                  HomeNursingImage, 'Home Nursing', AppRoutes.HouseNursing),
+                  HomeNursingImage, HomeNursingLabel, AppRoutes.HouseNursing),
               dashboardIcon(BloodBankImage, 'Blood Bank', AppRoutes.BloodBank),
               dashboardIcon(LocateImage, 'Locate Near By', AppRoutes.Locate),
               dashboardIcon(TrainigImage, 'Training', AppRoutes.Training),
